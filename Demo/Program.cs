@@ -6,7 +6,7 @@ namespace Demo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");asdf
+            Console.WriteLine("Hello World!");
         }
 
         public static int Sum(int a, int b)
