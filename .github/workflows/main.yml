@@ -21,3 +21,12 @@ jobs:
           
       - name: Run Tests
         run: dotnet test Tests
+        
+      - name: Build Demo
+        run: dotnet publish -c Release --self-contained false -r win10-x64
+
+      - name: Upload Demo
+        uses: actions/upload-artifact@v2
+        with:
+          name: Build
+          path: ./Demo/bin
